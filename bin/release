@@ -1,5 +1,5 @@
 cat <<EOF
 ---
 config_vars:
-  PATH: $PATH:/app/vendor/lpsolve
+  PATH: $PATH:/app/vendor/lpsolve/lp_solve_5.5.0.13_exe
 EOF
