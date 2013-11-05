@@ -4,4 +4,5 @@ echo "-----> Installing lpsolve 5.5.0.13"
 cd $1
 curl 'https://s3.amazonaws.com/verdigris-public/lp_solve_5.5.0.13_exe.tar.gz' -O
 mkdir -p vendor/lpsolve
-tar -C vendor/lpsolve -xvf lp_solve_5.5.0.13_exe.tar.gz
+gzip -dc lp_solve_5.5.0.13_exe.tar.gz | tar -C vendor/lpsolve -xf -
+#tar -C vendor/lpsolve -xvf lp_solve_5.5.0.13_exe.tar.gz
