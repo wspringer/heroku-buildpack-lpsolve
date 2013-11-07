@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
 echo "-----> Installing lpsolve 5.5.0.13"
+
+mkdir -p "$1" "$2"
+build=$(cd "$1/" && pwd)
+
 cd $1
 curl 'https://s3.amazonaws.com/verdigris-public/lp_solve_5.5.0.13_exe.tar.gz' -O
 mkdir -p vendor/lpsolve
