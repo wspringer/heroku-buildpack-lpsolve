@@ -6,9 +6,9 @@ mkdir -p "$1" "$2"
 build=$(cd "$1/" && pwd)
 
 cd $1
-curl 'https://s3.amazonaws.com/verdigris-public/lp_solve_5.5.0.13_exe.tar.gz' -O
+curl 'https://s3.amazonaws.com/nxt.flotsam.nl/lp_solve_5.5.2.5_exe_ux64.tar.gz' -O
 mkdir -p vendor/lpsolve
-gzip -dc lp_solve_5.5.0.13_exe.tar.gz | tar -C vendor/lpsolve -xf -
+gzip -dc lp_solve_5.5.2.5_exe_ux64.tar.gz | tar -C vendor/lpsolve -xf -
 #tar -C vendor/lpsolve -xvf lp_solve_5.5.0.13_exe.tar.gz
 
 mkdir -p $build/.profile.d
